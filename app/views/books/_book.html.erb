@@ -1,0 +1,16 @@
+<% @books.each do |book| %>
+  <table class="table">
+    <tr class="active">
+      <th><%= link_to book.name, book %></th>
+      <td class="text-justify active"><%= book.author.name %></td><br>
+      <td class="text-right active"><%= book.publisher.name %></td><br>
+    </tr>
+  </table>
+  <div class="btn btn-default btn-sm">
+    <%= link_to t(".edit"), edit_book_path(book) %>
+  </div>
+  <div class="btn btn-default btn-sm">
+    <%= link_to t(".delete"), book,
+      method: :delete, data: { confirm: t(".confirm") } %>
+  </div><br>
+<% end %>

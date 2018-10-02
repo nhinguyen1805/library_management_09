@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   resources :authors
   resources :publishers
   put "admin/:id", to: "users#make_admin", as: "make_admin"
+  resources :books
+  resources :comments
 end

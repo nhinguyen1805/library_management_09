@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 20180927093731) do
     t.integer "user_id"
     t.integer "target_id"
     t.string "target_type"
+    t.text "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_comments_on_user_id"

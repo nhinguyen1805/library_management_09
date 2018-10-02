@@ -26,9 +26,11 @@ Author
 end
 
 # Category
-name= ["Viet Nam", "Van hoc", "Hien dai", "Toan hoc",  "Dai so", "Giai tich", "Nuoc Ngoai", "Van hoc", "Hien dai", "Toan hoc"]
+name= ["Viet Nam", "Van hoc", "Hien dai", "Toan hoc",  "Dai so", "Giai tich",
+  "Nuoc Ngoai", "Van hoc", "Hien dai", "Toan hoc"]
 parent_id = [0, 1, 2, 1, 4, 4, 0, 7,8,7]
-path = ["1-", "1-2-", "1-2-3-", "1-4-", "1-4-5-", "1-4-6-", "7-", "7-8", "7-8-9", "7-10-" ]
+path = ["1-", "1-2-", "1-2-3-", "1-4-", "1-4-5-", "1-4-6-", "7-", "7-8",
+  "7-8-9", "7-10-" ]
 for i in 0..9 do
   Category.create!(name: name[i], parent_id: parent_id[i], path: path[i])
 end
@@ -39,6 +41,7 @@ end
   5.times do |n|
     name = Faker::Book.title
     content =Faker::Lorem.sentence(20)
-    Book.create!(name: name, category_id: i, author_id: i, publisher_id: i, content: content, number_page: 200, year: 2018, status: "Done")
+    Book.create!(name: name, category_id: i, author_id: i, publisher_id: i,
+      content: content, number_page: 200, year: 2018, status: "Done")
   end
 end
