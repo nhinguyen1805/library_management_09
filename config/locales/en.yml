@@ -57,6 +57,8 @@ en:
         no_author: "Author invalid"
       update:
         success: "Author has been updated"
+    show:
+
     edit:
       title: "Update Author"
       h1: "Update Author's information"
@@ -75,7 +77,7 @@ en:
       search: "Search"
       download: "Download:"
       excel: "Excel"
-  book:
+  books:
     create: "Your book has been created"
     update: "Your book has been updated"
     no_book: "No book matched"
@@ -91,6 +93,11 @@ en:
       edit: "Edit"
       delete: "Delete"
       confirm: "Are you sure?"
+      author: "Author: "
+      category: "Category: "
+      publisher: "Publisher: "
+      numberpage: "Number page: "
+      content: "Content: "
     new:
       title: "New Book"
       back: "Back"

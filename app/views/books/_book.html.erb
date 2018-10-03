@@ -2,8 +2,8 @@
   <%= link_to book.name, book %><br>
   <p><%= book.author.name %></p>
   <div>
-    <%= link_to t("book.show.edit"), edit_book_path(book) %>
-    <%= link_to t("book.show.delete"), book,
-      method: :delete, data: { confirm: t("book.show.confirm") } %>
+    <%= link_to t(".edit"), edit_book_path(book) %>
+    <%= link_to t(".delete"), book,
+      method: :delete, data: { confirm: t(".confirm") } %>
   </div><br>
 <% end %>

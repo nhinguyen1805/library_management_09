@@ -1,11 +1,11 @@
-<% provide :title, t("book.index.title") %>
-<h1><%= t "book.index.title" %></h1>
+<% provide :title, t(".title") %>
+<h1><%= t ".title" %></h1>
 <div class="input-group">
   <%= form_tag(books_path, method: :get) do %>
     <%= text_field_tag :search, params[:search],
-      placeholder: t("book.index.search"), class: "form-control" %>
+      placeholder: t(".search"), class: "form-control" %>
     <span class="input-group-btn">
-      <%= submit_tag t("book.index.search"), name: nil,
+      <%= submit_tag t(".search"), name: nil,
         class: "btn btn-default" %>
     </span>
   <% end %>

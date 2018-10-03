@@ -14,11 +14,4 @@ class Book < ApplicationRecord
   validates :content, :category, presence: true
   validates :number_page, presence: true
   validates :year, presence: true
-
-  def to_partial_path
-    self.class._to_partial_path
-  end
-
-  book = Book.new
-  book.to_partial_path
 end
